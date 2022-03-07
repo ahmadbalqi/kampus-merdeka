@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tugasjs.css">
+</head>
+<body>
+    <div class="main">
+        <h1>Kalkulatorku</h1>
+        <form id="formulir">
+            <label for="a1">Angka 1</label>
+            <input type="text" id="a1" name="a1" onfocus="kosong1()" value="Angka pertama" />
+            <label for="a2">Angka 2</label>
+            <input type="text" id="a2" name="a2" onfocus="kosong2()"value="Angka kedua" />
+            <label for="a2">Hasil</label>
+            <input type="text" name="hasil" value="0" disabled />
+            
+            <input type="button" name="tambah" value="+"  onclick="nambah()" />
+            <input type="button" name="kurang" value="-" onclick="ngurang()" />
+            <input type="button" name="kali" value="X" onclick="ngekali()"/>
+            <input type="button" name="bagi" value="/" onclick="ngebagi()" />
+            <input type="button" name="pangkat" value="^" onclick="mangkat()" />
+            <input type="button" name="batal" value="Batal" onclick="kosongin()" />
+    
+        </form>
+    </div>
+    <script src="kurs.js"></script>
+    
+</body>
+</html>
