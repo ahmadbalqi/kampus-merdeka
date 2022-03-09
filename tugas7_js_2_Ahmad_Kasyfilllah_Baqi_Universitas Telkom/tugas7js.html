@@ -1,0 +1,43 @@
+<script>
+    class Gempa {
+        constructor (lokasi,skala) {
+            this.lokasi = lokasi;
+            this.skala = skala;
+        }
+        dampak(a,b) {
+            this.lokasi = a;
+            this.skala = b;
+            let efek;
+            if (this.skala >= 0 && this.skala <= 2 ) {efek = "dampaknya tidak terasa";} 
+            else if (this.skala >2  && this.skala <= 4 ){efek = "dampaknya bangunan retak-retak";} 
+            else if (this.skala >4  && this.skala <= 6 ){efek = "dampaknya bangunan roboh";} 
+            else if (this.skala > 6 ){efek = "dampaknya bangunan roboh dan berpotensi tsunami";} 
+            else {efek = "Data kosong/masukkan data dengan benar";}
+
+            document.write(`Lokasi Gempa: ${this.lokasi}
+                <br/>Skala: ${this.skala}
+                <br/>Dampak: ${efek}<hr/>`);
+    }
+}
+    let rusia = new Gempa();
+    let amerika = new Gempa();
+    let israel = new Gempa();
+    let belanda = new Gempa();
+    let ukraina = new Gempa();
+    let kroasia = new Gempa();
+    let jepang = new Gempa();
+    let inggris = new Gempa();
+    let portugal = new Gempa();
+    let china = new Gempa();
+    rusia.dampak("Rusia",5);
+    amerika.dampak("Amerika",10)
+    belanda.dampak("Belanda",9)
+    israel.dampak("Israel",11)
+    ukraina.dampak("Ukraina",0)
+    kroasia.dampak("Kroasia",1)
+    jepang.dampak("Jepang",3)
+    inggris.dampak("Inggris",4)
+    portugal.dampak("Portugal",2)
+    china.dampak("China",7)
+    
+</script>
