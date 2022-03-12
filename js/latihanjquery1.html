@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".kuda").click(function(){
+                $(this).css({
+                    background: "url('img/kuda.jpg')"
+                });
+                $("<audio></audio>").attr({
+                    "src":"audio/kuda.mp3",
+                    "volume": 0.4,
+                    "autoplay":"autoplay"                     
+                });
+            });
+            $(".sapi").click(function(){
+                $(this).css({
+                    background: "url('img/sapi.jpg')"
+                });
+                $("<audio></audio>").attr({
+                    "src":"audio/sapi.mp3",
+                    "volume": 0.4,
+                    "autoplay":"autoplay"                     
+                });
+            });
+            $(".unta").click(function(){
+                $(this).css({
+                    background: "url('img/onta.jpg')"
+                });
+                $("<audio></audio>").attr({
+                    "src":"audio/unta.mp3",
+                    "volume": 0.4,
+                    "autoplay":"autoplay"                     
+                });
+            });
+        }); 
+            
+    </script>
+    <style type="text/css">
+        .galeri{
+            margin: auto;
+            border: 1px solid;
+            width: fit-content;
+            margin-top: 10%;
+        }
+        .kotak{
+            width: fit-content;
+            padding: 5px;
+            text-align: center;
+            float: left;
+        }
+        .kuda{
+            width: 300px;
+            height: 300px;
+            background-color: greenyellow;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: auto;
+        }
+        .sapi{
+            width: 300px;
+            height: 300px;
+            background-color: greenyellow;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: auto;
+        }
+        .unta{
+            width: 300px;
+            height: 300px;
+            background-color: greenyellow;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: auto;
+        }
+        
+        .clear{
+            clear: left;
+        }
+       
+       
+    </style>
+</head>
+<body>
+
+    <div class="galeri">
+        
+        <div class="kotak">
+            <div class="kuda">
+            </div>
+            <p>Ini kuda</p>    
+        </div>
+
+        <div class="kotak">
+            <div class="sapi">
+            </div>
+            <p>Ini sapi</p>    
+        </div>
+
+        <div class="kotak">
+            <div class="unta">
+            </div>
+            <p>Ini unta</p>    
+        </div>
+
+        <div class="clear"></div>
+    </div>
+
+    
+    
+</body>
+</html>
